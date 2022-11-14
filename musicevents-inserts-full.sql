@@ -1,6 +1,8 @@
 insert into place (pla_name) values('Main Stage');
 insert into place (pla_name) values('Photo Stand');
 insert into place (pla_name) values('Song Stand');
+insert into place (pla_name) values('Another Stand');
+
                         
 insert into student (stu_name, stu_place, stu_bdate, stu_gender, stu_email, stu_cour_id) values ('Joaquim Pires Lopes','lisboa',to_date('1995.01.01','YYYY.MM.DD'),'M','jpl@gmail.com',2);  
 insert into student (stu_name, stu_place, stu_bdate, stu_gender, stu_email, stu_cour_id) values ('Ana Maria Fonseca','Setúbal',to_date('1997.03.03','YYYY.MM.DD'),'F','ana@sapo.pt',1);  

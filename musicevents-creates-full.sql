@@ -2,7 +2,6 @@ create table place (
 
 					pla_id SERIAL not null,
 					pla_name VARCHAR(60) not null,
-					pla_count int not null,
 					primary key (pla_id)
 );
 
@@ -16,15 +15,13 @@ create table mediaitem (
 create table video (
 	                vid_id SERIAL not null,
 					vid_title VARCHAR(60) not null,
-					vid_length int not null,
-					vid_count int not null,
+					vid_length VARCHAR(60) not null,
 					vid_med_id int not null,
 					primary key (vid_id)
 );
 		           
 create table images (
 					img_id SERIAL not null,
-					img_count int not null,
                     img_med_id int not null,
 					img_cat_id int not null,
 					primary key (img_id)
@@ -39,10 +36,9 @@ create table imgcategory (
 		           
 create table song (
 					song_id SERIAL not null,
-					song_name varchar(40) not null,
-					song_count int not null, 			
+					song_name varchar(60) not null, 			
 					song_med_id int not null, 					
-					song_length int not null,
+					song_length VARCHAR(60) not null,
 					song_perf_id int not null,
 					primary key (song_id)
 );
@@ -65,9 +61,8 @@ create table videosong (
 create table interactelement (
 					interel_id SERIAL not null,
 					interel_name VARCHAR(60) not null,
-					interel_count int not null,
 					interel_med_id int not null,
-					interel_intertype_id int not null,S
+					interel_intertype_id int not null,
 					primary key (interel_id)
 					
 );
@@ -109,7 +104,6 @@ create table avatar (
 create table torso (
 					tor_id SERIAL not null,
 					tor_type VARCHAR(60) not null,
-					tor_count int not null,
 					primary key (tor_id)
 					
 );
@@ -117,7 +111,6 @@ create table torso (
 create table head (
 				    head_id SERIAL not null,
 					head_type VARCHAR(60) not null,
-					head_count int not null,
 					primary key (head_id)
 					
 );
@@ -125,7 +118,6 @@ create table head (
 create table legs (
 					leg_id SERIAL not null,
 					leg_type VARCHAR(60) not null,
-					leg_count int not null,
 					primary key (leg_id)
 					
 );

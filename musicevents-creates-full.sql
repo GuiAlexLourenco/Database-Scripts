@@ -14,7 +14,6 @@ create table mediaitem (
 		     		     
 create table video (
 	                vid_id SERIAL not null,
-					vid_title VARCHAR(60) not null,
 					vid_length VARCHAR(60) not null,
 					vid_med_id int not null,
 					primary key (vid_id)
@@ -35,8 +34,7 @@ create table imgcategory (
 );
 		           
 create table song (
-					song_id SERIAL not null,
-					song_name varchar(60) not null, 			
+					song_id SERIAL not null, 			
 					song_med_id int not null, 					
 					song_length VARCHAR(60) not null,
 					song_perf_id int not null,
@@ -98,27 +96,6 @@ create table avatar (
 					avt_leg_id int not null,
 					avt_head_id int not null, 								
 					primary key (avg_id)
-					
-);
-
-create table torso (
-					tor_id SERIAL not null,
-					tor_type VARCHAR(60) not null,
-					primary key (tor_id)
-					
-);
-
-create table head (
-				    head_id SERIAL not null,
-					head_type VARCHAR(60) not null,
-					primary key (head_id)
-					
-);
-
-create table legs (
-					leg_id SERIAL not null,
-					leg_type VARCHAR(60) not null,
-					primary key (leg_id)
 					
 );
 

@@ -89,17 +89,17 @@ insert into mediaitem (med_name, med_place_id) values ('Mushroom',4);
 insert into mediaitem (med_name, med_place_id) values ('Destroyable',4);
 
                  
-insert into video (vid_length, vid_med_id) values (/*'Southbound Train - Mountain'*/'00:02:55',1);
-insert into video (vid_length, vid_med_id) values (/*'Mean Town Blues - Johnny Winter'*/'00:05:00',2); 
-insert into video (vid_length, vid_med_id) values (/*'If I Were A Carpenter - Tim Hardin'*/'00:02:32',3); 
-insert into video (vid_length, vid_med_id) values (/*'Im Going Home - Ten Years After'*/'00:05:15',4); 
-insert into video (vid_length, vid_med_id) values (/*'Uncle Sam Blues - Jefferson Airplane'*/'00:05:57',5); 
-insert into video (vid_length, vid_med_id) values (/*'The Who'*/'00:28:11',6);   
-insert into video (vid_length, vid_med_id) values (/*'Credence Clearwater Revival'*/'00:20:57',7); 
-insert into video (vid_length, vid_med_id) values (/*'Jimi Hendrix'*/'01:22:17',8); 
-insert into video (vid_length, vid_med_id) values (/*'Love - Country Joe And The Fish'*/'00:03:08',9); 
-insert into video (vid_length, vid_med_id) values (/*'My Crystal Spider - Sweetwater'*/'00:04:59',10); 
-insert into video (vid_length, vid_med_id) values (/*'Why Oh Why - Sweetwater'*/'00:09:16',11);
+insert into video (vid_length, vid_med_id, vid_perf_id) values (/*'Southbound Train - Mountain'*/'00:02:55',1,1);
+insert into video (vid_length, vid_med_id, vid_perf_id) values (/*'Mean Town Blues - Johnny Winter'*/'00:05:00',2,2); 
+insert into video (vid_length, vid_med_id, vid_perf_id) values (/*'If I Were A Carpenter - Tim Hardin'*/'00:02:32',3,3); 
+insert into video (vid_length, vid_med_id, vid_perf_id) values (/*'Im Going Home - Ten Years After'*/'00:05:15',4,4); 
+insert into video (vid_length, vid_med_id, vid_perf_id) values (/*'Uncle Sam Blues - Jefferson Airplane'*/'00:05:57',5,5); 
+insert into video (vid_length, vid_med_id, vid_perf_id) values (/*'The Who'*/'00:28:11',6,6);   
+insert into video (vid_length, vid_med_id, vid_perf_id) values (/*'Credence Clearwater Revival'*/'00:20:57',7,7); 
+insert into video (vid_length, vid_med_id, vid_perf_id) values (/*'Jimi Hendrix'*/'01:22:17',8,8); 
+insert into video (vid_length, vid_med_id, vid_perf_id) values (/*'Love - Country Joe And The Fish'*/'00:03:08',9,10); 
+insert into video (vid_length, vid_med_id, vid_perf_id) values (/*'My Crystal Spider - Sweetwater'*/'00:04:59',10,11); 
+insert into video (vid_length, vid_med_id, vid_perf_id) values (/*'Why Oh Why - Sweetwater'*/'00:09:16',11,);
 
 
 insert into images (img_med_id, img_cat_id) values (12,1);
@@ -208,11 +208,16 @@ insert into performer (perf_name) values ('Melanie Safka');
 insert into performer (perf_name) values ('The Band');
 
 
-insert into interactelement (interel_name,interel_count,interel_med_id,interel_intertype_id) values ('Mushroom',,81,1);
-insert into interactelement (interel_name,interel_count,interel_med_id,interel_intertype_id) values ('Destroyable',,82,2);
+insert into interactelement (interel_name, interel_med_id, interel_intertype_id) values ('Drug',81,1);
+insert into interactelement (interel_name, interel_med_id, interel_intertype_id) values ('Destroyable',82,2);
 
 
 insert into interacttype (intertype_name) values ('Drug');
 insert into interacttype (intertype_name) values ('Destroyable');
 
+
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,);
+
+
+insert into usr (usr_name, usr_pswrd, usr_age, usr_gender, usr_avatar) values (,);
 

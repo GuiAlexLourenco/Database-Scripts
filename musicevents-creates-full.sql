@@ -49,13 +49,13 @@ create table performer (
 );		
 		            		                 		    
 
---create table videosong (
-					--vs_id SERIAL not null,
-					--vs_vid_id int not null,
-					--vs_song_id int not null,
-					--primary key (vs_id)
+/*create table videosong (
+					vs_id SERIAL not null,
+					vs_vid_id int not null,
+					vs_song_id int not null,
+					primary key (vs_id)
 					
---);
+);*/
 
 create table interactelement (
 					interel_id SERIAL not null,
@@ -65,12 +65,12 @@ create table interactelement (
 					
 );
 
-create table interacttype (
+/*create table interacttype (
 					intertype_id SERIAL not null,
 					intertype_name VARCHAR(60) not null,
 					primary key (intertype_id)
 					
-);
+);*/
 
 create table usermedia (
 					umedia_id SERIAL not null,
@@ -91,14 +91,14 @@ create table usr (
 					
 );
 
---create table avatar (
-					--avt_id SERIAL not null,
-					--avt_tor_id int not null,
-					--avt_leg_id int not null,
-					--avt_head_id int not null, 								
-					--primary key (avg_id)
+/*create table avatar (
+					avt_id SERIAL not null,
+					avt_tor_id int not null,
+					avt_leg_id int not null,
+					avt_head_id int not null, 								
+					primary key (avg_id)
 					
---);
+);*/
 
 
 -- Foreign Keys
@@ -128,12 +128,12 @@ foreign key(song_perf_id) references performer(perf_id)
 foreign key (song_med_id) references mediaitem(med_id) 
 ON DELETE NO ACTION ON UPDATE NO ACTION;            
             
---alter table videosong
---add constraint videosong_fk_video
---add constraint videosong_fk_song
---foreign key (vs_vid_id) references video(vid_id)
---foreign key (vs_song_id) references song(song_id) 
---ON DELETE NO ACTION ON UPDATE NO ACTION;            
+/*alter table videosong
+add constraint videosong_fk_video
+add constraint videosong_fk_song
+foreign key (vs_vid_id) references video(vid_id)
+foreign key (vs_song_id) references song(song_id) 
+ON DELETE NO ACTION ON UPDATE NO ACTION;*/           
 
 alter table interactelement 
 add constraint intearctelement_fk_mediaitem
@@ -149,16 +149,16 @@ foreign key (umedia_med_id) references mediaitem(med_id)
 foreign key (umedia_usr_id) references usr(usr_id)
 ON DELETE NO ACTION ON UPDATE NO ACTION; 
 
---alter table usr 
---add constraint usr_fk_avatar
---foreign key (usr_avt_id) references avatar(avt_id)
---ON DELETE NO ACTION ON UPDATE NO ACTION;
+/*alter table usr 
+add constraint usr_fk_avatar
+foreign key (usr_avt_id) references avatar(avt_id)
+ON DELETE NO ACTION ON UPDATE NO ACTION;*/
 
---alter table avatar
---add constraint avatar_fk_torso
---add constraint avatar_fk_legs
---add constraint avatar_fk_head
---foreign key (avt_tor_id) references torso(tor_id)
---foreign key (avt_head_id) references head(head_id)
---foreign key (avt_leg_id) references legs(leg_id)
---ON DELETE NO ACTION ON UPDATE NO ACTION; 
+/*alter table avatar
+add constraint avatar_fk_torso
+add constraint avatar_fk_legs
+add constraint avatar_fk_head
+foreign key (avt_tor_id) references torso(tor_id)
+foreign key (avt_head_id) references head(head_id)
+foreign key (avt_leg_id) references legs(leg_id)
+ON DELETE NO ACTION ON UPDATE NO ACTION;*/ 

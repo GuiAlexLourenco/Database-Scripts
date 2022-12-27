@@ -212,29 +212,29 @@ insert into interactelement (interel_med_id, interel_intertype_id) values (81,1)
 insert into interactelement (interel_med_id, interel_intertype_id) values (82,2);
 
 
-insert into interacttype (intertype_name) values ('Drug');
-insert into interacttype (intertype_name) values ('Destroyable');
+--insert into interacttype (intertype_name) values ('Drug');
+--insert into interacttype (intertype_name) values ('Destroyable');
 
 
+insert into usermedia (umedia_med_id, umedia_usr_id) values (3,1);
 insert into usermedia (umedia_med_id, umedia_usr_id) values (5,1);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (8,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (10,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (12,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (14,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (23,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (37,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (52,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (81,1);
 insert into usermedia (umedia_med_id, umedia_usr_id) values (1,2);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (19,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (25,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (31,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (43,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (57,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (64,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (77,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (82,2);
 
 
 insert into usr (usr_name, usr_pswrd, usr_age, usr_gender, usr_avatar) values ('John Smith','123456',32,'Male',1);

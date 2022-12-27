@@ -85,7 +85,7 @@ insert into mediaitem (med_name, med_place_id) values ('Theme For An Imaginary W
 insert into mediaitem (med_name, med_place_id) values ('Whats Wrong - Sweetwater',3);
 insert into mediaitem (med_name, med_place_id) values ('Chest Fever - The Band',3);
 insert into mediaitem (med_name, med_place_id) values ('Heaven And Hell - The Who',3);
-insert into mediaitem (med_name, med_place_id) values ('Mushroom',4);
+insert into mediaitem (med_name, med_place_id) values ('Drug',4);
 insert into mediaitem (med_name, med_place_id) values ('Destroyable',4);
 
                  
@@ -208,16 +208,35 @@ insert into performer (perf_name) values ('Melanie Safka');
 insert into performer (perf_name) values ('The Band');
 
 
-insert into interactelement (interel_name, interel_med_id, interel_intertype_id) values ('Drug',81,1);
-insert into interactelement (interel_name, interel_med_id, interel_intertype_id) values ('Destroyable',82,2);
+insert into interactelement (interel_med_id, interel_intertype_id) values (81,1);
+insert into interactelement (interel_med_id, interel_intertype_id) values (82,2);
 
 
 insert into interacttype (intertype_name) values ('Drug');
 insert into interacttype (intertype_name) values ('Destroyable');
 
 
-insert into usermedia (umedia_med_id, umedia_usr_id) values (,);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (5,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,1);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (1,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
+insert into usermedia (umedia_med_id, umedia_usr_id) values (,2);
 
 
-insert into usr (usr_name, usr_pswrd, usr_age, usr_gender, usr_avatar) values (,);
+insert into usr (usr_name, usr_pswrd, usr_age, usr_gender, usr_avatar) values ('John Smith','123456',32,'Male',1);
+insert into usr (usr_name, usr_pswrd, usr_age, usr_gender, usr_avatar) values ('Jane Doe','abcdefg',27,'Female',2);
 

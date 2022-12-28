@@ -76,6 +76,7 @@ create table usermedia (
 					umedia_id SERIAL not null,
 					umedia_med_id int not null,
 					umedia_usr_id int not null,
+					umedia_count int not null,
 					primary key (umedia_id)
 					
 );
@@ -83,9 +84,9 @@ create table usermedia (
 create table usr (
 					usr_id SERIAL not null,
 					usr_name VARCHAR(60) not null,
-					usr_pswrd VARCHAR(60) not null,
+					/*usr_pswrd VARCHAR(60) not null,*/
 					usr_age int not null,
-					usr_gender VARCHAR(1) not null,
+					usr_gender VARCHAR(60) not null,
 					usr_avatar int not null, 		
 					primary key (usr_id)
 					
@@ -111,22 +112,32 @@ ON DELETE NO ACTION ON UPDATE NO ACTION;
 alter table video 
 add constraint video_fk_mediaitem
 foreign key (vid_med_id) references mediaitem(med_id)
+ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+alter table video
+add constraint video_fk_performer
 foreign key(vid_perf_id) references performer(perf_id)
 ON DELETE NO ACTION ON UPDATE NO ACTION;
             
 alter table images 
 add constraint image_fk_mediaitem
-add constraint image_fk_imgcategory
 foreign key (img_med_id) references mediaitem(med_id)
+ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+alter table images 
+add constraint image_fk_imgcategory
 foreign key (img_cat_id) references imgcategory(imgcat_id) 
 ON DELETE NO ACTION ON UPDATE NO ACTION;
             
 alter table song
 add constraint song_fk_mediaitem
+foreign key (song_med_id) references mediaitem(med_id) 
+ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+alter table song
 add constraint song_fk_performer
 foreign key(song_perf_id) references performer(perf_id)
-foreign key (song_med_id) references mediaitem(med_id) 
-ON DELETE NO ACTION ON UPDATE NO ACTION;            
+ON DELETE NO ACTION ON UPDATE NO ACTION; 
             
 /*alter table videosong
 add constraint videosong_fk_video
@@ -137,15 +148,21 @@ ON DELETE NO ACTION ON UPDATE NO ACTION;*/
 
 alter table interactelement 
 add constraint intearctelement_fk_mediaitem
-add constraint intearctelement_fk_interacttype
 foreign key (interel_med_id) references mediaitem(med_id)
+ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+/*alter table interactelement 
+add constraint intearctelement_fk_interacttype
 foreign key (interel_intertype_id) references interacttype(intertype_id) 
-ON DELETE NO ACTION ON UPDATE NO ACTION; 
+ON DELETE NO ACTION ON UPDATE NO ACTION;*/
                         
 alter table usermedia 
 add constraint usermedia_fk_mediaitem
-add constraint usermedia_fk_usr
 foreign key (umedia_med_id) references mediaitem(med_id)
+ON DELETE NO ACTION ON UPDATE NO ACTION; 
+
+alter table usermedia 
+add constraint usermedia_fk_usr
 foreign key (umedia_usr_id) references usr(usr_id)
 ON DELETE NO ACTION ON UPDATE NO ACTION; 
 

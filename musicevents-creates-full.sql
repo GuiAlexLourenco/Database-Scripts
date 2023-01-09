@@ -60,7 +60,7 @@ create table performer (
 create table interactelement (
 					interel_id SERIAL not null,
 					interel_med_id int not null,
-					interel_intertype_id int not null,
+					/*interel_intertype_id int not null,*/
 					primary key (interel_id)
 					
 );

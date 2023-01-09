@@ -219,9 +219,9 @@ insert into interactelement (interel_med_id/*, interel_intertype_id*/) values (8
 --insert into interacttype (intertype_name) values ('Sky');
 
 
-insert into usr (usr_name/*, usr_pswrd, usr_age*/, usr_gender, usr_avatar) values ('John Smith'/*,'123456'*/,32,'Male',1);
-insert into usr (usr_name/*, usr_pswrd, usr_age*/, usr_gender, usr_avatar) values ('Jane Doe'/*,'abcdefg'*/,27,'Female',2);
-insert into usr (usr_name/*, usr_pswrd, usr_age*/, usr_gender, usr_avatar) values ('Pedro Gomes'/*,'qwerty'*/,22,'Other',1);
+insert into usr (usr_name/*, usr_pswrd,*/, usr_age, usr_gender, usr_avatar) values ('John Smith'/*,'123456'*/,32,'Male',1);
+insert into usr (usr_name/*, usr_pswrd,*/, usr_age, usr_gender, usr_avatar) values ('Jane Doe'/*,'abcdefg'*/,27,'Female',2);
+insert into usr (usr_name/*, usr_pswrd,*/, usr_age, usr_gender, usr_avatar) values ('Pedro Gomes'/*,'qwerty'*/,22,'Other',1);
 
 
 insert into usermedia (umedia_med_id, umedia_usr_id, umedia_count) values (2,1,1);
